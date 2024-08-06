@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f8fdff;
+}
+
+.button-container {
+  position: absolute;
+  top: 20px;  /* Distance from the top */
+  left: 20px; /* Distance from the left */
+}
+
+.drk-lgt-btn img {
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 20px;
+  transition: 0.5s ease;
+}
+
+#drk-btn {
+  background-color: #0a0807;
+}
+
+#lgt-btn {
+  background-color: #f5f7f8;
+}
+
+#lgt-btn:hover, #drk-btn:hover {
+  cursor: pointer;
+  filter: invert();
+}
+
+.hidden {
+  display: none;
+}
+
+body.dark-theme {
+  background-color: #161b24;
+}
+
+/* New bar styling */
+.bar {
+  position: absolute;
+  top: 70px; /* Adjust this value to position below the button */
+  left: 250px;
+  width: 800px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  background-color: #161b24; /* Opposite color of the light theme background */
+  border-radius: 15px; /* Adjust border radius for rounded corners */
+  transition: 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px; /* Adjust padding as needed */
+}
+
+.bar2 {
+  position: absolute;
+  top: 70px; /* Adjust this value to position below the button */
+  left: 1100px;
+  width: 200px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  background-color: #161b24; /* Opposite color of the light theme background */
+  border-radius: 15px; /* Adjust border radius for rounded corners */
+  transition: 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px; /* Adjust padding as needed */
+}
+
+body.dark-theme .bar {
+  background-color: #f8fdff; /* Opposite color of the dark theme background */
+}
+
+body.dark-theme .bar2 {
+  background-color: #f8fdff;
+}
+
+/* Text on bars */
+.bar-text, .bar2-text {
+  color: #fff; /* Default text color */
+  font-size: 16px; /* Adjust font size as needed */
+  font-weight: bold;
+}
+
+body.dark-theme .bar-text, body.dark-theme .bar2-text {
+  color: #161b24; /* Text color when dark theme is active */
+}
